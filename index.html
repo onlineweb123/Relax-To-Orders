@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html lang="ta">
 <head>
   <meta charset="UTF-8">
   <title>Relax to Order</title>
-
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-
-<meta name="google-site-verification" content="tRgrNV5W-AwBZ2LBDmUq6GoTuzfjp_eoZR4F0xBvJT0" />
- 
-
-  <meta name="description" content="Relax to Order - உங்கள் வீட்டிலிருந்து ஓரளவுக்கு கூட வெளியே போகாமல் பொருட்களை Order செய்யும் வசதி. Shop-க்கு போன மடையாதீங்க. Just relax and order now!">
-<meta name="keywords" content="Relax to Order, Order App, Smart Delivery, Tamil Nadu Delivery, Nearby Shop Delivery, Home Delivery, Order Now">
-<meta name="author" content="Mathavan">
-
+  
+  <link rel="icon" href="a.png" type="image/png">
+  
+  
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Relax To Order Delivery Service ">
+  <meta name="keywords" content="Relax to Order, Delivery Service ,Delivery , Cuddalore, Relax To Order, RELAX TO ORDER , ரிலாக்ஸ் டு ஆர்டர் ">
+  <meta name="author" content="Relax to Order">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
   <style>
@@ -31,7 +33,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(0, 150, 136, 0.95);
+      background: #007aff;
       color: white;
       padding: 20px;
       text-align: center;
@@ -84,7 +86,7 @@
 
     h2 {
       text-align: center;
-      color: #004d40;
+      color:#004d40  ;
       margin-bottom: 25px;
     }
 
@@ -116,7 +118,7 @@
     }
 
     .inline-button {
-      background: #26a69a;
+      background:#0063cc ;
       color: white;
       border: none;
       padding: 10px 16px;
@@ -126,11 +128,11 @@
     }
 
     .inline-button:hover {
-      background: #00796b;
+      background:#02cb41 ;
     }
 
     .list-area {
-      background: #f1f8e9;
+      background: #e0fcff;
       padding: 15px;
       border-radius: 12px;
       border: 1px solid #aed581;
@@ -170,7 +172,7 @@
     .submit-button {
       display: block;
       width: 100%;
-      background: #00796b;
+      background:#007aff;
       color: white;
       padding: 14px;
       border: none;
@@ -182,7 +184,7 @@
     }
 
     .submit-button:hover {
-      background: #004d40;
+      background: #0063cc ;
     }
 
     .toast {
@@ -254,7 +256,7 @@
       <h2>உங்கள் தேவைகளை உள்ளிடுங்கள்</h2>
 
       <label for="itemInput">உங்களுக்கு என்ன தேவை?</label>
-      <input type="text" id="itemInput" placeholder="உதா: பால்,பிரியாணி,மருந்து ">
+      <input type="text" id="itemInput" placeholder="உதா: பிரியாணி,பால்,மருந்து">
       <div class="button-group">
         <button type="button" class="inline-button" onclick="addItem()">➕ சேர்க்கவும்</button>
       </div>
@@ -324,7 +326,7 @@
       <textarea id="note" rows="2" placeholder="உதா: நான் கேட்ட பொருள் இல்லை என்றால் Call பண்ணுங்க"></textarea>
 
       <div class="petrol-notice">
-        ⚠️ குறைந்தபட்சமாக ₹100 Service கட்டணம் உள்ளது. இது Final Bill-இல் சேர்க்கப்படும்.
+        ⚠️ குறைந்தபட்சமாக Service Charge  ₹100 கட்டணம் உள்ளது. இது Final Bill-இல் சேர்க்கப்படும்.
       </div>
 
       <button type="submit" class="submit-button">🚚 Order Now - Whatsapp</button>
@@ -338,7 +340,7 @@
     <button class="close-btn" onclick="toggleSidebar()">×</button>
     <h3>📜 Terms & Conditions</h3>
     <p>
-      1. Service Charge குறைந்த பச்சம் ₹100 கட்டாயம் சேர்க்கப்படும்.<br>
+      1. குறைந்தபச்சம் Service Charge  ₹100 கட்டாயம் சேர்க்கப்படும்.<br>
       2. பொருட்கள் வாடிக்கையாளரால் தேர்ந்தெடுக்கப்பட வேண்டும்.<br>
       3. Whatsapp மூலம் மட்டுமே ஆர்டர் அனுப்பப்பட வேண்டும்.<br>
       4. தொடர்பு இல்லாத மொபைல் எண்கள் நிராகரிக்கப்படும்.<br>
@@ -458,7 +460,7 @@
       const address = document.getElementById('address').value;
       const note = document.getElementById('note').value;
       const district = document.getElementById('district').value;
-      const taluk = document.getElementById('taluk').value;
+      const taluk =- document.getElementById('taluk').value;
 
       if (phone.length !== 10 || !/^\d{10}$/.test(phone)) {
         alert("தயவுசெய்து சரியான 10 இலக்க மொபைல் எண் உள்ளிடவும்.");
@@ -470,7 +472,7 @@
         itemText += `\n${i + 1}. ${item}`;
       });
 
-      const message = `🛒 புதிய ஆர்டர்:\n${itemText}\n\n👤 பெயர்: ${name}\n📱 எண்: ${phone}\n📍 மாவட்டம்: ${district}\n🏙️ வட்டம்: ${taluk}\n🏠 முகவரி:\n${address}\n\n📌 குறிப்பு:\n${note || 'எதுவும் குறிப்பிடவில்லை'}\n\n⚠️ குறைந்தபட்சமாக Service Charge ₹100 உள்ளது. இது Final Bill-இல் சேர்க்கப்படும்.`;
+      const message = `🛒 புதிய ஆர்டர்:\n${itemText}\n\n👤 பெயர்: ${name}\n📱 எண்: ${phone}\n📍 மாவட்டம்: ${district}\n🏙️ வட்டம்: ${taluk}\n🏠 முகவரி:\n${address}\n\n📌 குறிப்பு:\n${note || 'எதுவும் குறிப்பிடவில்லை'}\n\n⚠️ குறைந்தபட்சமாக ₹100 பெட்ரோல் கட்டணம் உள்ளது. இது Final Bill-இல் சேர்க்கப்படும்.`;
 
       const whatsappLink = `https://wa.me/919344165879?text=${encodeURIComponent(message)}`;
       showToast();
@@ -491,4 +493,8 @@
     }
   </script>
 </body>
+</html>
+
+
+
 </html>
